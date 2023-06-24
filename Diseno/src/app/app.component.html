@@ -1,0 +1,253 @@
+<router-outlet></router-outlet>
+
+<!-- DISENO DE ESCRITORIO -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+  <!-- DISENO ESCRITORIO -->
+  <div class="escritorio">
+
+    <div class="header">
+      <div class="cambiarTraduccion">
+        <p>.-</p>
+        <span class="tipo-traduccion material-symbols-outlined">
+          chevron_right
+        </span>
+        <p>a</p>
+      </div>
+      <div class="diccionario">
+        <!-- <span class="material-symbols-outlined">
+                menu
+            </span> -->
+        <span class="material-symbols-outlined">
+          question_mark
+        </span>
+      </div>
+    </div>
+
+    <div class="contenido">
+
+      <div class="sidebar--estadisticas">
+        <div class="sidebar2--titulo">
+          <!-- <p><b>Panel Estadisticas</b></p> -->
+        </div>
+
+        <span>Traduccion a Texto</span>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <div class="number">
+                <p class="porcentaje_a_texto">0%</p>
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="porcentaje_barra">
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63" />
+                <stop offset="100%" stop-color="#673ab7" />
+              </linearGradient>
+            </defs>
+            <circle class="circle-a-texto" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+        </div>
+        <br>
+
+        <span>Traduccion a Morse</span>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <div class="number">
+                <p class="porcentaje_a_morse">0%</p>
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px" class="porcentaje_barra">
+            <defs>
+              <linearGradient id="GradientColor2">
+                <stop offset="0%" stop-color="#0be8bf" />
+                <stop offset="100%" stop-color="#ffd60a" />
+              </linearGradient>
+            </defs>
+            <circle class="circle-a-morse" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="traduccion">
+        <div class="texto-a-traducir">
+          <p class="texto"></p>
+        </div>
+        <div class="texto-traducido">
+
+          <input class="traduccion__input" type="text" placeholder="Traduccion">
+
+          <div class="btn-aceptar">
+            <span>Aceptar</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar--caracteres bg-success">
+        <p class="titulo ">Configuracion</p>
+        <div class="configuraciones">
+
+          <p class="">Cantidad</p>
+          <input class="input-cantidad input-cantidad-esc" type="number" value="1">
+          <p>Alfabeto</p>
+          <label class="switch">
+            <input class="activar-alfabeto" type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <p>Numeros</p>
+          <label class="switch">
+            <input class="activar-numeros" type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <p>Simbolos</p>
+          <label class="switch">
+            <input class="activar-simbolos" type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- DISENO MOVIL -->
+  <div class="responsive">
+
+    <div class="p-8 space-y-4 alert-danger">
+      <div class="flex shadow-lg rounded-lg">
+        <div class="bg-red-600 py-4 px-6 rounded-l-lg flex items-center"> <svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16" class="fill-current text-white" width="20" height="20">
+            <path fill-rule="evenodd"
+              d="M4.47.22A.75.75 0 015 0h6a.75.75 0 01.53.22l4.25 4.25c.141.14.22.331.22.53v6a.75.75 0 01-.22.53l-4.25 4.25A.75.75 0 0111 16H5a.75.75 0 01-.53-.22L.22 11.53A.75.75 0 010 11V5a.75.75 0 01.22-.53L4.47.22zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5H5.31zM8 4a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 100-2 1 1 0 000 2z">
+            </path>
+          </svg> </div>
+        <div
+          class="px-4 py-6 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200">
+          <div><span class="lista-errores"></span></div> <button>
+            <a class="btn-close-alert">
+              <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-gray-700" viewBox="0 0 16 16" width="20"
+                height="20">
+                <path fill-rule="evenodd"
+                  d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+                </path>
+              </svg>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-8 space-y-4 alert-success">
+      <div class="flex shadow-lg rounded-lg">
+        <div class="bg-green-600 py-4 px-6 rounded-l-lg flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" viewBox="0 0 16 16" width="20"
+            height="20">
+            <path fill-rule="evenodd"
+              d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z">
+            </path>
+          </svg>
+        </div>
+        <div
+          class="px-4 py-6 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200">
+          <div>Correcto!</div>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-gray-700" viewBox="0 0 16 16" width="20"
+              height="20">
+              <path fill-rule="evenodd"
+                d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="responsive-texto-a-traducir">
+      <div class="responsive-header" (click)="Traduccion()">
+        <a class="traduccion-a-morse">A</a>
+        <a class="tipo-de-traduccion">.-</a>
+        <a class="traduccion-a-texto">.-</a>
+      </div>
+      <p class="texto"></p>
+    </div>
+
+    <div class="responsive-grid">
+      <div class="traduccion">
+        <input type="text" class="traduccion__input-responsive">
+      </div>
+      <div class=""></div>
+      <div class="button">
+        <button class="btn-aceptar">Aceptar</button>
+      </div>
+      <div class=""></div>
+      <div class="cantidad">
+        <div class="reducir-cantidad">
+          <button class=" btn-reducir-cant">
+            <span class="material-symbols-outlined">
+              chevron_left
+            </span>
+          </button>
+        </div>
+        <div class="numero">
+          <input type="text" class="input-cantidad input-cantidad-resp" value="1" readonly>
+        </div>
+        <div class="aumentar-cantidad">
+          <button class=" btn-aumentar-cant">
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class=""></div>
+      <div class="alfabeto">
+        <p>Alfabeto</p>
+        <label class="switch">
+          <input type="checkbox" class="activar-alfabeto activar-alfabeto-responsive">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class=""></div>
+
+      <div class=""></div>
+      <div class="numeros">
+        <p>Numeros</p>
+        <label class="switch">
+          <input class="activar-numeros activar-numeros-responsive" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class=""></div>
+
+      <div class=""></div>
+      <div class="simbolos">
+        <p>Simbolos</p>
+        <label class="switch">
+          <input class="activar-simbolos activar-simbolos-responsive" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class=""></div>
+    </div>
+
+
+
+  </div>
+
+
+</body>
+
+</html>
